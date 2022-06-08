@@ -1,0 +1,4 @@
+let People = {
+  Name: "",
+  Date: "",
+};

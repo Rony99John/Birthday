@@ -1,0 +1,22 @@
+.haederr {
+  color: white;
+  text-align: center;
+}
+
+.back {
+  background-color: #e1988c;
+  background-image: url("./Balloons.png");
+}
+
+.formm {
+  width: 870px;
+  margin: 0px 200px 0px;
+}
+
+.bar {
+  border: 2px solid #b57369;
+  border-radius: 20px 20px 0px 0px;
+  background-color: #b57369;
+  display: flex;
+  justify-content: space-around;
+}
