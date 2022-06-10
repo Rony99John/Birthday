@@ -19,4 +19,53 @@
   background-color: #b57369;
   display: flex;
   justify-content: space-around;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.barElements {
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.main {
+  background-color: #ffffff;
+  color: #995d53;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-bottom: 20px;
+}
+
+.search {
+  padding-left: 85px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.srch {
+  width: 700px;
+  height: 30px;
+  border-style: none;
+  background-color: #eeeeee;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 0.5px solid #f1f1f1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+a.new :hover {
+  color: #b57369;
+}
+
+.new {
+  cursor: pointer;
+  font-size: 32px;
+  padding-left: 419px;
+  user-select: none;
 }

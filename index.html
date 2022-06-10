@@ -4,63 +4,70 @@
     <title>RonyBirthdayCalendar</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body class="back">
     <h1 class="haederr">Staff Birthday Calendar</h1>
     <div class="formm">
       <div class="bar">
-        <a>Name &#9662;</a>
-        <a>Birthday &#9662;</a>
-        <a>Gender &#9662;</a>
+        <a class="barElements">Name &#9662;</a>
+        <a class="barElements">Birthday &#9662;</a>
+        <a class="barElements">Gender &#9662;</a>
         <a></a>
       </div>
-      <div>
-        <input
-          type="text"
-          placeholder="Search a name, date, or a wishlist item"
-        />
+      <div class="main">
+        <div class="search">
+          <input
+            class="srch"
+            type="text"
+            placeholder="Search a name, date, or wishlist item"
+          />
+        </div>
+
+        <div id="cards"></div>
+
+        <div id="form" style="display: none">
+          <label for="fname">First name</label><br /><br />
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Rony"
+          /><br /><br />
+
+          <label for="lname">Last name</label><br /><br />
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Johnny"
+          /><br /><br />
+
+          <label for="DT">Date of Birth</label><br /><br />
+          <input type="date" id="DT" value="date" placeholder="" /><br /><br />
+
+          <label for="Pass">Password</label><br /><br />
+          <input type="password" id="Pass" placeholder="" /><br /><br />
+
+          <label for="WL">Wish List</label><br /><br />
+          <input
+            type="text"
+            id="WL"
+            placeholder="Roses, lavender, blah blah..."
+          /><br /><br />
+
+          <label for="G">Gender</label><br /><br />
+          <form id="G">
+            <input type="radio" value="Male" id="G1" name="Gender" />
+            <label for="G1">Male</label>
+            <input type="radio" value="Female" id="G2" name="Gender" checked />
+            <label for="G2">Female</label>
+          </form>
+
+          <button onclick="onof()">CANCEL</button>
+          <button onclick="AddNew()">ok</button>
+        </div>
+        <a class="new" onclick="onof()">+</a>
       </div>
-      <div>
-        <label for="fname">First name</label><br /><br />
-        <input
-          type="text"
-          id="fname"
-          name="fname"
-          placeholder="Rony"
-        /><br /><br />
-
-        <label for="lname">Last name</label><br /><br />
-        <input
-          type="text"
-          id="lname"
-          name="lname"
-          placeholder="Johnny"
-        /><br /><br />
-
-        <label for="DT">Date of Birth</label><br /><br />
-        <input type="date" id="DT" value="date" placeholder="" /><br /><br />
-
-        <label for="Pass">Password</label><br /><br />
-        <input type="password" id="Pass" placeholder="" /><br /><br />
-
-        <label for="WL">Wish List</label><br /><br />
-        <input
-          type="text"
-          id="WL"
-          placeholder="Roses, lavender, blah blah...."
-        /><br /><br />
-
-        <label for="G">Gender</label><br /><br />
-        <form id="G">
-          <input type="radio" value="Male" id="G1" name="Gender" />
-          <label for="G1">Male</label>
-          <input type="radio" value="Female" id="G2" name="Gender" checked />
-          <label for="G2">Female</label>
-        </form>
-
-        <button>CANCEL</button>
-        <button onclick="Add()">ok</button>
-      </div>
-      <a>+</a>
     </div>
     <script src="./function.js"></script>
   </body>
