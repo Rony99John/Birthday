@@ -89,7 +89,9 @@ a.new :hover {
   color: #808080;
 }
 
-.G:after {
+#G1:checked {
+  color: red;
+  background-color: red;
 }
 
 .ok {
