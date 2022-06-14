@@ -66,6 +66,50 @@ a.new :hover {
 .new {
   cursor: pointer;
   font-size: 32px;
-  padding-left: 419px;
+  padding-left: 426px;
+  padding-right: 426px;
   user-select: none;
+}
+
+.put {
+  width: 119px;
+  height: 20px;
+  border: 1px solid #eeeeee;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  color: #808080;
+}
+
+.WLput {
+  width: 397px;
+  height: 74px;
+  border: 1px solid #eeeeee;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  color: #808080;
+}
+
+.G:after {
+}
+
+.ok {
+  width: 116px;
+  height: 38px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #b57369;
+  border: 0.5px solid #995d53;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel {
+  width: 116px;
+  height: 38px;
+  font-size: 16px;
+  color: #995d53;
+  background-color: #f6f6f6;
+  border: 0.5px solid #eeeeee;
+  border-radius: 5px;
+  cursor: pointer;
 }

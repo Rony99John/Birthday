@@ -14,28 +14,33 @@
         <a class="barElements">Gender &#9662;</a>
         <a></a>
       </div>
+
       <div class="main">
         <div class="search">
           <input
+            oninput="search()"
+            id="srch"
             class="srch"
             type="text"
-            placeholder="Search a name, date, or wishlist item"
+            placeholder="  Search a name, date, or wishlist item"
           />
         </div>
 
         <div id="cards"></div>
 
         <div id="form" style="display: none">
-          <label for="fname">First name</label><br /><br />
+          <label for="fname">First Name</label><br /><br />
           <input
+            class="put"
             type="text"
             id="fname"
             name="fname"
             placeholder="Rony"
           /><br /><br />
 
-          <label for="lname">Last name</label><br /><br />
+          <label for="lname">Last Name</label><br /><br />
           <input
+            class="put"
             type="text"
             id="lname"
             name="lname"
@@ -43,13 +48,25 @@
           /><br /><br />
 
           <label for="DT">Date of Birth</label><br /><br />
-          <input type="date" id="DT" value="date" placeholder="" /><br /><br />
+          <input
+            class="put"
+            type="date"
+            id="DT"
+            value="date"
+            placeholder=""
+          /><br /><br />
 
           <label for="Pass">Password</label><br /><br />
-          <input type="password" id="Pass" placeholder="" /><br /><br />
+          <input
+            class="put"
+            type="password"
+            id="Pass"
+            placeholder=""
+          /><br /><br />
 
           <label for="WL">Wish List</label><br /><br />
           <input
+            class="WLput"
             type="text"
             id="WL"
             placeholder="Roses, lavender, blah blah..."
@@ -63,10 +80,10 @@
             <label for="G2">Female</label>
           </form>
 
-          <button onclick="onof()">CANCEL</button>
-          <button onclick="AddNew()">ok</button>
+          <button class="cancel" onclick="onof()">CANCEL</button>
+          <button class="ok" onclick="AddNew()">OK</button>
         </div>
-        <a class="new" onclick="onof()">+</a>
+        <a id="new" class="new" onclick="onof()">+</a>
       </div>
     </div>
     <script src="./function.js"></script>
