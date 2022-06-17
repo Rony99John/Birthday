@@ -59,6 +59,20 @@
   padding-bottom: 20px;
 }
 
+.Information {
+  cursor: default;
+}
+
+.editBtn {
+  cursor: pointer;
+}
+
+.delBtn {
+  cursor: pointer;
+  color: #995d53;
+  font-size: 20px;
+}
+
 a.new :hover {
   color: #b57369;
 }
@@ -69,6 +83,43 @@ a.new :hover {
   padding-left: 426px;
   padding-right: 426px;
   user-select: none;
+}
+
+.form {
+  display: grid;
+  margin-left: 120px;
+  margin-top: 30px;
+  margin-bottom: 16px;
+  grid-template-columns: 220px 220px 220px;
+  grid-template-rows: 80px 80px 80px;
+  grid-template-areas:
+    "Fname Sname Gender"
+    "Date WL WL"
+    "Pass WL WL";
+}
+
+.name1 {
+  grid-area: Fname;
+}
+
+.name2 {
+  grid-area: Sname;
+}
+
+.gender {
+  grid-area: Gender;
+}
+
+.date {
+  grid-area: Date;
+}
+
+.pass {
+  grid-area: Pass;
+}
+
+.wishList {
+  grid-area: WL;
 }
 
 .put {
@@ -87,11 +138,6 @@ a.new :hover {
   background-color: #f6f6f6;
   border-radius: 5px;
   color: #808080;
-}
-
-#G1:checked {
-  color: red;
-  background-color: red;
 }
 
 .ok {
@@ -114,4 +160,7 @@ a.new :hover {
   border: 0.5px solid #eeeeee;
   border-radius: 5px;
   cursor: pointer;
+  margin-right: 10px;
+  margin-left: 497.4px;
+  margin-bottom: 35px;
 }

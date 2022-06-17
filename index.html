@@ -9,9 +9,9 @@
     <h1 class="haederr">Staff Birthday Calendar</h1>
     <div class="formm">
       <div class="bar">
-        <a class="barElements">Name &#9662;</a>
-        <a class="barElements">Birthday &#9662;</a>
-        <a class="barElements">Gender &#9662;</a>
+        <a onclick="sort(1)" class="barElements">Name &#9662;</a>
+        <a onclick="sort(3)" class="barElements">Birthday &#9662;</a>
+        <a onclick="sort(2)" class="barElements">Gender &#9662;</a>
         <a></a>
       </div>
 
@@ -29,56 +29,71 @@
         <div id="cards"></div>
 
         <div id="form" style="display: none">
-          <label for="fname">First Name</label><br /><br />
-          <input
-            class="put"
-            type="text"
-            id="fname"
-            name="fname"
-            placeholder="Rony"
-          /><br /><br />
+          <div class="form">
+            <div class="name1">
+              <label for="fname">First Name</label><br /><br />
+              <input
+                class="put"
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="Rony"
+              />
+            </div>
 
-          <label for="lname">Last Name</label><br /><br />
-          <input
-            class="put"
-            type="text"
-            id="lname"
-            name="lname"
-            placeholder="Johnny"
-          /><br /><br />
+            <div class="name2">
+              <label for="lname">Last Name</label><br /><br />
+              <input
+                class="put"
+                type="text"
+                id="lname"
+                name="lname"
+                placeholder="Johnny"
+              />
+            </div>
 
-          <label for="DT">Date of Birth</label><br /><br />
-          <input
-            class="put"
-            type="date"
-            id="DT"
-            value="date"
-            placeholder=""
-          /><br /><br />
+            <div class="gender">
+              <label for="G">Gender</label><br /><br />
+              <form id="G">
+                <input type="radio" value="Male" id="G1" name="Gender" />
+                <label for="G1">Male</label>
+                <input
+                  type="radio"
+                  value="Female"
+                  id="G2"
+                  name="Gender"
+                  checked
+                />
+                <label for="G2">Female</label>
+              </form>
+            </div>
 
-          <label for="Pass">Password</label><br /><br />
-          <input
-            class="put"
-            type="password"
-            id="Pass"
-            placeholder=""
-          /><br /><br />
+            <div class="date">
+              <label for="DT">Date of Birth</label><br /><br />
+              <input
+                class="put"
+                type="date"
+                id="DT"
+                value="date"
+                placeholder=""
+              />
+            </div>
 
-          <label for="WL">Wish List</label><br /><br />
-          <input
-            class="WLput"
-            type="text"
-            id="WL"
-            placeholder="Roses, lavender, blah blah..."
-          /><br /><br />
+            <div class="pass">
+              <label for="Pass">Password</label><br /><br />
+              <input class="put" type="password" id="Pass" placeholder="" />
+            </div>
 
-          <label for="G">Gender</label><br /><br />
-          <form id="G">
-            <input type="radio" value="Male" id="G1" name="Gender" />
-            <label for="G1">Male</label>
-            <input type="radio" value="Female" id="G2" name="Gender" checked />
-            <label for="G2">Female</label>
-          </form>
+            <div class="wishList">
+              <label for="WL">Wish List</label><br /><br />
+              <input
+                class="WLput"
+                type="text"
+                id="WL"
+                placeholder="Roses, lavender, blah blah..."
+              />
+            </div>
+          </div>
 
           <button class="cancel" onclick="onof()">CANCEL</button>
           <button class="ok" onclick="AddNew()">OK</button>
