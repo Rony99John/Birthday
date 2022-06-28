@@ -65,6 +65,7 @@
 
 .editBtn {
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .delBtn {
@@ -160,7 +161,28 @@ a.new :hover {
   border: 0.5px solid #eeeeee;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.cancelP {
   margin-right: 10px;
   margin-left: 497.4px;
   margin-bottom: 35px;
+}
+/* Dialog Styles */
+.popUp {
+  background-color: #ffffff;
+  color: #995d53;
+  border-style: none;
+  border-radius: 20px;
+  width: 407px;
+  height: 192px;
+}
+
+#CheckPassword {
+  background-color: #ffffff;
+  color: #995d53;
+  border-style: none;
+  border-radius: 20px;
+  width: 407px;
+  height: 235px;
 }

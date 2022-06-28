@@ -7,6 +7,40 @@
 
   <body class="back">
     <h1 class="haederr">Staff Birthday Calendar</h1>
+
+    <dialog class="popUp" id="ErrorMsg">
+      <form>
+        <p>Error! Close input row first</p>
+        <button id="EB" class="ok">OK</button>
+      </form>
+    </dialog>
+
+    <dialog class="popUp" id="ConfirmDelete">
+      <form>
+        <p>Delete Entry?</p>
+        <button id="No" class="cancel">CANCEL</button>
+        <button id="Yes" class="ok">OK</button>
+      </form>
+    </dialog>
+
+    <dialog id="check">
+      <form>
+        <p>Enter Password</p>
+        <input id="passCHk" type="password" placeholder="" />
+        <button id="cancelPB" class="cancel">CANCEL</button>
+        <button id="okPB" class="ok">OK</button>
+      </form>
+    </dialog>
+
+    <dialog class="popUp" id="BirthdayWishlist">
+      <form>
+        <button id="close" class="ok">X</button>
+        <p id="WLName"></p>
+        <p>Birthday Wishlist</p>
+        <div id="list"></div>
+      </form>
+    </dialog>
+
     <div class="formm">
       <div class="bar">
         <a onclick="sort(1)" class="barElements">Name &#9662;</a>
@@ -31,7 +65,7 @@
         <div id="form" style="display: none">
           <div class="form">
             <div class="name1">
-              <label for="fname">First Name</label><br /><br />
+              <label for="fname">First Name</label><br />
               <input
                 class="put"
                 type="text"
@@ -42,7 +76,7 @@
             </div>
 
             <div class="name2">
-              <label for="lname">Last Name</label><br /><br />
+              <label for="lname">Last Name</label><br />
               <input
                 class="put"
                 type="text"
@@ -53,7 +87,7 @@
             </div>
 
             <div class="gender">
-              <label for="G">Gender</label><br /><br />
+              <label for="G">Gender</label><br />
               <form id="G">
                 <input type="radio" value="Male" id="G1" name="Gender" />
                 <label for="G1">Male</label>
@@ -69,7 +103,7 @@
             </div>
 
             <div class="date">
-              <label for="DT">Date of Birth</label><br /><br />
+              <label for="DT">Date of Birth</label><br />
               <input
                 class="put"
                 type="date"
@@ -80,12 +114,12 @@
             </div>
 
             <div class="pass">
-              <label for="Pass">Password</label><br /><br />
+              <label for="Pass">Password</label><br />
               <input class="put" type="password" id="Pass" placeholder="" />
             </div>
 
             <div class="wishList">
-              <label for="WL">Wish List</label><br /><br />
+              <label for="WL">Wish List</label><br />
               <input
                 class="WLput"
                 type="text"
@@ -95,7 +129,7 @@
             </div>
           </div>
 
-          <button class="cancel" onclick="onof()">CANCEL</button>
+          <button class="cancel cancelP" onclick="onof()">CANCEL</button>
           <button class="ok" onclick="AddNew()">OK</button>
         </div>
         <a id="new" class="new" onclick="onof()">+</a>
