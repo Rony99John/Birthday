@@ -54,8 +54,8 @@ function displaying(array) {
   <a class="Information" >${array[i].date}</a>
   <a class="Information" >${array[i].gender}</a>
   <div>
-  <a class="editBtn" onclick="enterPass(${array[i].id}, 0)">Edit</a>
-  <svg onclick="enterPass(${array[i].id}, 1)" width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <a class="editBtn" onclick="enterPass(event, ${array[i].id}, 0)">Edit</a>
+  <svg onclick="enterPass(event, ${array[i].id}, 1)" width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1 5H21M9.00002 10V15M13 10V15M3 5H19L17.42 19.22C17.3659 19.7094 17.1331 20.1616 16.7663 20.49C16.3995 20.8184 15.9244 21 15.432 21H6.56801C6.07565 21 5.60057 20.8184 5.23376 20.49C4.86694 20.1616 4.63417 19.7094 4.58 19.22L3 5ZM6.34501 2.147C6.50676 1.80397 6.76271 1.514 7.08301 1.31091C7.40331 1.10782 7.77475 0.999996 8.15401 1H13.846C14.2254 0.999806 14.5971 1.10755 14.9176 1.31064C15.2381 1.51374 15.4942 1.80381 15.656 2.147L17 5H5.00001L6.34501 2.147Z" stroke="#995D53" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 
@@ -260,7 +260,8 @@ function edit(x) {
 
 // Functions To Check The Password For the Delete And Edit Buttons....
 
-function enterPass(id, Z) {
+function enterPass(event, id, Z) {
+  event.stopPropagation();
   CheckPassword.show();
   editId = id;
   delEdit = Z;
