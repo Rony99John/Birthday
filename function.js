@@ -80,12 +80,13 @@ function clearInput() {
   document.getElementById("WL").value = "";
 }
 
-// For The ID OF The Edit Button
+// Some Variables For Sorting, Deleting, Editing......
 
 let editId = -1;
 let ID = 3;
 let delEdit = -1;
 let password = "";
+let sortReverse = 1;
 
 // For The Dialogs
 
@@ -130,7 +131,13 @@ function sort(X) {
       return 0;
     });
   }
-  displaying(Cards);
+  if (sortReverse > 0) {
+    sortReverse = -1;
+    displaying(Cards.reverse());
+  } else {
+    sortReverse = 1;
+    displaying(Cards);
+  }
 }
 
 // Searching Function by name, date, or wishlist item
