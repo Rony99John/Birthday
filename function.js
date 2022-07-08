@@ -210,7 +210,7 @@ function AddNew() {
     clearInput();
     console.log(np);
   } else {
-    errorMsg.show();
+    errorMsg.showModal();
     console.log("Complete Filling The Form");
   }
 }
@@ -269,7 +269,7 @@ function edit(x) {
 
 function enterPass(event, id, Z) {
   event.stopPropagation();
-  CheckPassword.show();
+  CheckPassword.showModal();
   editId = id;
   delEdit = Z;
 }
@@ -317,7 +317,7 @@ function checkPass() {
         if (delEdit == 0) {
           edit(editId);
         } else {
-          confDelete.show();
+          confDelete.showModal();
         }
       } else {
         editId = -1;
@@ -381,7 +381,7 @@ function displayWL(Id) {
         finalList = finalList + ` ${Extra}`;
       }
       document.getElementById("list").innerHTML = finalList;
-      cardWL.show();
+      cardWL.showModal();
     }
   }
 }

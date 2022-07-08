@@ -27,6 +27,7 @@
   cursor: pointer;
   color: #ffffff;
   font-size: 18px;
+  user-select: none;
 }
 
 .main {
@@ -176,6 +177,11 @@ a.new :hover {
   border-radius: 20px;
   width: 407px;
   height: 192px;
+}
+
+.popUp::backdrop {
+  background: linear-gradient(60deg, blue, red);
+  opacity: 0.5;
 }
 
 #CheckPassword {
